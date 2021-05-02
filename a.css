@@ -1,0 +1,288 @@
+html {
+  font-size: 1vw;
+  overflow-x: hidden;
+  background-color: #f6f6f6;
+}
+em {
+  font-style: normal;
+}
+.clearFix::after {
+  content: '';
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+* {
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  margin-top: 5px;
+}
+.header .tree-select {
+  position: absolute;
+  width: 40px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.header .tree-select .icontree-table {
+  font-size: 6vw;
+  color: white;
+}
+.header .search-item {
+  display: inline-block;
+  margin: 0 70px 0 60px;
+  width: calc(100% - 120px);
+}
+.header .search-item input[type="text"] {
+  width: 100%;
+  height: 30px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  padding-left: 3%;
+  border: none;
+}
+.header .login {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  text-align: right;
+  margin-right: 15px;
+  font-size: 4vw;
+  color: white;
+}
+.bottom-circle-bg-content {
+  position: absolute;
+  top: 0;
+  left: -25%;
+  right: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 25%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  background-color: red;
+}
+.swiper-container .swiper-pagination {
+  bottom: 12% !important;
+}
+.swiper-container img {
+  padding: 3%;
+  width: 100%;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+.central-navigation .navigation-item {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  box-sizing: border-box;
+  padding-bottom: 0;
+}
+.central-navigation .navigation-item .item-img {
+  width: 100%;
+}
+.central-navigation .navigation-item .item-name {
+  font-size: 3.5vw;
+}
+.central-navigation .focus-nav {
+  text-align: center;
+  overflow: initial;
+}
+.central-navigation .focus-nav span {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+.central-navigation .focus-nav .cur {
+  background-color: red;
+}
+.seckill {
+  margin: 2%;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 4vw;
+  padding: 2%;
+}
+.seckill .site {
+  color: red;
+}
+.seckill .seckill-title .count-down {
+  vertical-align: text-top;
+  font-size: 3.5vw;
+  display: inline-block;
+}
+.seckill .seckill-title .count-down .seckill-time:nth-child(odd) {
+  float: left;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+.seckill .seckill-title .count-down .seckill-time:nth-child(even) {
+  float: left;
+  color: red;
+  margin: 0 2px;
+}
+.seckill .seckill-title .more {
+  float: right;
+  font-size: 3.5vw;
+  color: red;
+}
+.seckill .seckill-title .more i {
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+.seckill .seckill-title .more .iconxiangyouxuanze {
+  font-size: 3vw;
+}
+.seckill .shop-content {
+  font-size: 3vw;
+  text-align: center;
+}
+.seckill .shop-content .shop-item {
+  float: left;
+  width: 16.5%;
+}
+.seckill .shop-content .shop-item .min-price {
+  font-weight: 700;
+  color: red;
+}
+.seckill .shop-content .shop-item .max-price {
+  color: #ccc;
+  text-decoration: line-through;
+}
+.seckill .shop-content .shop-item .shop-photo {
+  width: 100%;
+}
+.commodity-theme {
+  margin: 0 2%;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+.commodity-theme .commodity-content {
+  width: calc(100% + 4px);
+}
+.commodity-theme .commodity-content .commodity-cord {
+  position: relative;
+  float: left;
+  border-radius: 10px;
+  width: 25%;
+}
+.commodity-theme .commodity {
+  background-color: red;
+  padding: 4px;
+  margin-right: 4px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.commodity-theme .commodity .commodity-photo {
+  width: 100%;
+  border-radius: 10px;
+}
+.commodity-theme .commodity .sub-title {
+  position: absolute;
+  display: block;
+  bottom: 30px;
+  margin: 0 5%;
+  width: 80%;
+  background-image: linear-gradient(to right, #83d036, #30b327);
+  border-radius: 9px;
+}
+.commodity-theme .commodity .main-title {
+  display: block;
+  font-size: 3.8vw;
+  margin: 7px 0;
+}
+.hot-shopping {
+  background-color: white;
+  border-radius: 10px;
+  margin: 3% 2%;
+  padding: 2%;
+}
+.hot-shopping .single-title {
+  float: left;
+  width: 50%;
+}
+.hot-shopping .single-title .hot-title {
+  font: normal 700 4vw '';
+}
+.hot-shopping .single-title .describe {
+  font-size: 3.5vw;
+}
+.hot-shopping .single-title .bottom-h {
+  text-align: center;
+  margin-top: 3%;
+}
+.hot-shopping .single-title .bottom-h .hot-img {
+  width: 40%;
+  margin: 2%;
+}
+.hot-shopping .single-tit-one-graph .single-title {
+  width: 25%;
+}
+.hot-shopping .single-tit-one-graph .hot-img {
+  width: 100%;
+}
+.guess-like-module .like-content {
+  padding: 0 1%;
+}
+.guess-like-module .like-item {
+  width: 48%;
+  float: left;
+  border-radius: 10px;
+  margin: 1%;
+  padding-bottom: 5.5rem;
+  background-color: white;
+}
+.guess-like-module .like-item .like-img {
+  border-radius: 10px;
+  width: 100%;
+}
+.guess-like-module .like-item .like-descibe {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin: 0 3% 7px;
+}
+.guess-like-module .like-item .like-price .price-box {
+  font: normal 700 4vw '';
+  color: red;
+}
+.guess-like-module .like-item .like-price .look-similarities {
+  float: right;
+  background-color: #ccc;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 2px 4px;
+}
+.common-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 10px 9px 9px 10px #ccc;
+}
+.common-nav .nav-item {
+  float: left;
+  width: 20%;
+  padding: 6px 0;
+  background-color: white;
+  text-align: center;
+}
+.common-nav .nav-item .iconfont {
+  font-size: 6vw;
+}
+.common-nav .nav-item .text-center {
+  display: block;
+  font-size: 3.5vw;
+}
+.commonav-color {
+  color: red;
+}
