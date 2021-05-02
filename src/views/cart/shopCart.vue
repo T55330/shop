@@ -10,7 +10,7 @@
            class="cart-item">
         <div class="btn">
           <van-checkbox v-model="shopItem.checked"
-                        @change="shopChecked(index,shopItem.checked)"
+                        @click.native="shopChecked(index,shopItem.checked,shopItem.id)"
                         checked-color="#2eb257"></van-checkbox>
         </div>
         <img :src="shopItem.smallImage"
@@ -57,7 +57,7 @@ export default {
     }
   },
   methods: {
-    ...mapMutations(['REDUCE_CART', 'ADD_GOODS']),
+    ...mapMutations(['REDUCE_CART', 'ADD_GOODS', 'SELECTED_SINGLE_GOODS']),
     reduce (id, num) {
       if (num === 1) {
         Dialog.confirm({
@@ -84,17 +84,18 @@ export default {
       })
       console.log(shopItem)
     },
-    shopChecked (index, checked) {
-      if (!checked) {
-        this.count++
-      } else {
-        this.count--
-      }
-      if (this.count === 0) {
-        this.checked = true
-      } else {
-        this.checked = false
-      }
+    shopChecked (index, checked, id) {
+      this.SELECTED_SINGLE_GOODS({ goodsId: id })
+      // if (!checked) {
+      //   this.count++
+      // } else {
+      //   this.count--
+      // }
+      // if (this.count === 0) {
+      //   this.checked = true
+      // } else {
+      //   this.checked = false
+      // }
     }
   },
   computed: {

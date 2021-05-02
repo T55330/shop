@@ -1,4 +1,4 @@
-import { ADD_GOODS, INIT_SHOP_CART, REDUCE_CART } from './mutations-type'
+import { ADD_GOODS, INIT_SHOP_CART, REDUCE_CART, SELECTED_SINGLE_GOODS } from './mutations-type'
 import { setStore, getStore } from './../config/global'
 export default {
   [ADD_GOODS] (state, { goodsId, goodsName, smallImage, goodsPrice }) {
@@ -29,6 +29,18 @@ export default {
       delete shopCart[goodsId]
       state.shopCart = { ...shopCart }
     }
+    setStore(shopCart)
+  },
+  [SELECTED_SINGLE_GOODS] (state, { goodsId }) {
+    const shopCart = state.shopCart
+    const goodsTarget = shopCart[goodsId]
+    console.log(goodsTarget.checked)
+    if (goodsTarget.checked) {
+      goodsTarget.checked = !goodsTarget.checked
+    } else {
+      goodsTarget.checked = !goodsTarget.checked
+    }
+    state.shopCart = { ...shopCart }
     setStore(shopCart)
   },
   [INIT_SHOP_CART] (state) {

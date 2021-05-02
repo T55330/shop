@@ -8,7 +8,7 @@
       <div class="money1 ">
         <span>￥{{product.price}}</span>
         <div class="ic">
-          <van-icon @click="addToCart(product)"
+          <van-icon @click.native="addToCart(product)"
                     name="shopping-cart-o" />
         </div>
       </div>
