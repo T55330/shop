@@ -10,7 +10,6 @@ import './style/common.less'
 import './plugins/vant'
 Vue.config.productionTip = false
 
-
 new Vue({
   router,
   store,

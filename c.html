@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body,
+  html {
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;
+  }
+
+  div {
+    position: relative;
+    height: 40px;
+    width: 100px;
+    margin: 100px auto;
+    background-color: red;
+    background-image: linear-gradient(to bottom right, #98ddca, #d5ecc2, #ffd3b4);
+  }
+
+  div::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #98ddca, #d5ecc2, #ffd3b4);
+    filter: blur(25px);
+    transform: translateY(30px) scale(0.9);
+  }
+</style>
+
+<body>
+  <div></div>
+</body>
+
+</html>
